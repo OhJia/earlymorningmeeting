@@ -15,6 +15,14 @@ app.use('/webhooks', ParseCloud.app);
 // Host static files from public/
 app.use(express.static(__dirname + '/public'));
 
+
+app.get('/test', function(req, res) {
+  // POST http://example.parseapp.com/test (with request body "message=hello")
+  // res.json({ message: req.body.message });  // Send a JSON response
+  res.send("hahahahahah");
+});
+
+
 app.post('/test', function(req, res) {
   // POST http://example.parseapp.com/test (with request body "message=hello")
   // res.json({ message: req.body.message });  // Send a JSON response
