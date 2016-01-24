@@ -25,7 +25,7 @@ app.get('/test', function(req, res) {
 
 app.post('/test', function(req, res) {
   // POST http://example.parseapp.com/test (with request body "message=hello")
-  res.json({ text: res + "......" });  // Send a JSON response
+  res.json({ response_type: "in_channel", text: "......" });  // Send a JSON response
 });
 
 // Catch all unknown routes.
