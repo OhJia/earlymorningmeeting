@@ -1,0 +1,11 @@
+{
+  "applications": {
+    "EarlyMorningMeeting": {
+      "parseAppId": "Xo7W4QL8ooo1JcjpZ10MlocTmJU21sSvbrUX3rk9",
+      "herokuAppId": "36150de8-076c-47bf-9cf8-9797c0e59fe5"
+    },
+    "_default": {
+      "link": "EarlyMorningMeeting"
+    }
+  }
+}
