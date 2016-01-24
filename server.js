@@ -18,6 +18,7 @@ app.use(express.static(__dirname + '/public'));
 app.post('/test', function(req, res) {
   // POST http://example.parseapp.com/test (with request body "message=hello")
   res.json({ message: req.body.message });  // Send a JSON response
+  response.send("hahahahahah");
 });
 
 // Catch all unknown routes.
