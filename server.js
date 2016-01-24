@@ -15,6 +15,13 @@ app.use('/webhooks', ParseCloud.app);
 // Host static files from public/
 app.use(express.static(__dirname + '/public'));
 
+
+// Attach request handlers to routes
+app.get('/test', function(req, res) {
+  // GET http://example.parseapp.com/test?message=hello
+  res.render('test.ejs', { text: req.query.message });  // Render a template
+});
+
 // Catch all unknown routes.
 app.all('/', function(request, response) {
   response.status(404).send('Page not found.');
